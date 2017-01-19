@@ -1,0 +1,35 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ejemplos/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /ejemplos/wordpress/index.php [L]
+</IfModule>
+# END WordPress
+
+# caracteres de idioma
+AddDefaultCharset utf-8
+
+# ahorrando ancho de banda aumentando el rendimiento del servidor
+<ifmodule mod_ph4.c>
+php_value zlib.output_compression 16386
+</ifmodule>
+
+# establecemos la hora del servidor
+SetEnv TZ Spain/Madrid
+
+# idioma por defecto
+DefaultLanguage es-Es
+
+# Establecemos el email del administrador del servidor
+SetEnv SERVER_ADMIN lorenakrei@gmail.com
+
+# desactiva la firma del servidor
+ServerSignature Off
+
+# proteccion contra ataques DOS limitando el tamaño de subida de archivos
+LimitRequestBody 10240000
+
