@@ -2833,12 +2833,9 @@ Panels
 	}
 
 	.formulario{
-		padding:50px;
+		padding:20px;
 		border:1px solid #595959;
 		border-radius: 20px;
-		-moz-box-shadow: 10px 11px 75px #171617;
-        -webkit-box-shadow: 10px 11px 75px #171617;
-        box-shadow: 10px 11px 75px #171617;
         background-color: #595959;	
 	}
 
