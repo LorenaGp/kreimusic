@@ -9,14 +9,15 @@
 	<?php do_action('sydney_inside_top_post'); ?>
 
 	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'post_feat_image' ) != 1 ) ) : ?>
+		
 		<div class="entry-thumb">
 			<?php the_post_thumbnail('sydney-large-thumb'); ?>
 		</div>
 	<?php endif; ?>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="title-post entry-title">', '</h1>' ); ?>
-
+		
+	<?php the_title( '<h1 class="title-post entry-title" style="color:#d65050; font-size:30px";>', '</h1>' ); ?>
 		<?php if (get_theme_mod('hide_meta_single') != 1 ) : ?>
 		<div class="meta-post">
 			<?php sydney_posted_on(); ?>

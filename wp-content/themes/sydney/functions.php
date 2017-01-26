@@ -5,6 +5,8 @@
  * @package Sydney
  */
 
+
+
 if ( ! function_exists( 'sydney_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -13,6 +15,8 @@ if ( ! function_exists( 'sydney_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
+	
+
 function sydney_setup() {
 
 	/*

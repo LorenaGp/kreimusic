@@ -27,7 +27,7 @@ get_header(); ?>
 						<div class="content">
 							<h3>
 								<?php if ($link) : ?>
-								<a href="<?php echo esc_url($link); ?>"><?php the_title(); ?></a>
+								<!--<a href="<?php echo esc_url($link); ?>"><?php the_title(); ?></a>-->
 								<?php else : ?>
 								<?php the_title(); ?>
 								<?php endif; ?>

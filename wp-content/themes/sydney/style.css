@@ -15,9 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Sydney is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 */
 
-.imagenes_home{
-	margin:80px 80px 100px 80px;
-}
+
 
 
 
@@ -1677,7 +1675,7 @@ Bottom
 	.site-footer {
 		background-color: #1c1c1c;
 		line-height: 35px;
-		padding: 15px 0;
+		padding: 20px;
 	}
 	.site-footer,
 	.site-footer a {
@@ -2791,11 +2789,21 @@ Panels
 	a {
 		color: #d65050;
 	}
+	.grupos h3 a{
+		color: #d65050;
+	}
+	p{
+		font-size:16px;
+		
+	}
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: #d65050;
 	}
 	.text-color { color: #d65050;}
 
+	.footer_rrss{
+		float:right;
+	}
 	.formulario_eshop{
 		float:right;
 		padding-right:20px;
@@ -2805,10 +2813,31 @@ Panels
 
 	.siguenos{
 		float:right;
-		
 		color:white;
 		font-size:15px;
 		text-align: center;
+	}
+
+	.siguenos a{
+		color:white;
+	}
+
+	.site-info a:hover{
+		color: #d65050;
+	}
+
+	.site-info p{
+		display:inline;
+	}
+	.info{
+		float:left;
+	}
+	.redes{
+		float:right;
+	}
+
+	.redes i{
+		padding-left:10px;
 	}
 
 	.formulario_eshop input[type="text"], .formulario_eshop input[type="password"] {
@@ -3209,6 +3238,9 @@ Panels
 	}
 	/* All Mobile Sizes */
 	@media only screen and (max-width: 767px) {
+		.redes{
+			float: left;
+		}
 		.posts-layout {
 			max-width: 100%;
 		}
@@ -3319,11 +3351,16 @@ Panels
 		.text-slider {
 			margin-bottom: 15px;
 		}
+
+		.cajas{
+		width: 60%;
 	}
+	
 	@media only screen and (max-width: 320px) {
 		.text-slider {
 			margin-bottom: 0;
 		}
+		
 	}
 	/* Center menu vertically */
 	@media screen and (min-width: 1025px) {

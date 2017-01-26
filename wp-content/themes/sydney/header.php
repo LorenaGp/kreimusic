@@ -67,7 +67,7 @@
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12">
 					<div class="siguenos">
-						<button><i class="fa fa-facebook" aria-hidden="true"></i> ¡Síguenos en Facebook! <br> </button>
+						<button><a href="https://facebook.com/kreiMusic" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> ¡Síguenos en Facebook!</a> <br> </button>
 					</div>
 				</div>
 			</div>

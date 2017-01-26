@@ -5,16 +5,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php if ( has_post_thumbnail() && ( get_theme_mod( 'index_feat_image' ) != 1 ) ) : ?>
+	<header class="entry-header">
+		<?php the_title( sprintf('<h2 class="title-post entry-title" style="color:#d65050; font-size:30px"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php if ( has_post_thumbnail() && ( get_theme_mod( 'index_feat_image' ) != 1 ) ) : ?>
 		<div class="entry-thumb">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail('sydney-large-thumb'); ?></a>
 		</div>
 	<?php endif; ?>
-
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="title-post entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
 		<?php if ( 'post' == get_post_type() && get_theme_mod('hide_meta_index') != 1 ) : ?>
 		<div class="meta-post">
 			<?php sydney_posted_on(); ?>

@@ -25,7 +25,7 @@ SetEnv TZ Spain/Madrid
 DefaultLanguage es-Es
 
 # Establecemos el email del administrador del servidor
-SetEnv SERVER_ADMIN lorenakrei@gmail.com
+SetEnv SERVER_ADMIN info@kreimusic.com
 
 # desactiva la firma del servidor
 ServerSignature Off
@@ -33,3 +33,11 @@ ServerSignature Off
 # proteccion contra ataques DOS limitando el tamaño de subida de archivos
 LimitRequestBody 10240000
 
+# protege de comentarios spam
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} .wp-comments-post\.php*
+RewriteCond %{HTTP_REFERER} !.*kreimusic.com.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule (.*) ^http://%{REMOTE_ADDR}/$ [R=301,L]
+RewriteRule ^post/([0-9]+)?/?([0-9]+)?/?$ /index.php?p=$1&page=$2 [QSA]

@@ -48,7 +48,7 @@ function sydney_custom_styles($custom) {
         $custom .= ".site-description { font-size:" . intval($site_desc_size) . "px; }"."\n";
     }
     //Menu
-    $menu_size = get_theme_mod( 'menu_size', '14' );
+    $menu_size = get_theme_mod( 'menu_size', '16' );
     if ($menu_size) {
         $custom .= "#mainnav ul li a { font-size:" . intval($menu_size) . "px; }"."\n";
     }    	    	

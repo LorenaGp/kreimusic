@@ -11,15 +11,15 @@ get_header(); ?>
 
 	<?php do_action('sydney_before_content'); ?>
 
-	<div id="primary" class="content-area col-md-9 <?php echo sydney_blog_layout(); ?>">
+	<div id="primary" class="content-area col-md-12 <?php echo sydney_blog_layout(); ?>">
 		<main id="main" class="post-wrap" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h3 class="archive-title">', '</h3>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					/*the_archive_title( '<h3 class="archive-title" style="color:#d65050; font-size:40px">', '</h3>' );*/
+					/*the_archive_description( '<div class="taxonomy-description">', '</div>' );*/
 				?>
 			</header><!-- .page-header -->
 

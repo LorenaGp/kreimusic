@@ -21,14 +21,12 @@
 		
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			<p>©kreiMusic | info@kreimusic.com</p>
-		<!--<div class="site-info container">
-			<a href="<?php echo esc_url( __( 'http://kreimusic.com/' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'sydney' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %2$s by %1$s.', 'sydney' ), 'aThemes', '<a href="https://athemes.com/theme/sydney" rel="designer">Sydney</a>' ); ?>
-		</div>.site-info -->
-
-
+			<p class= "info">©kreiMusic | <a href="mailto:info@kreimusic.com">info@kreimusic.com</a></p>
+			<p class="redes"><a href="https://facebook.com/kreiMusic" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a> <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></p>
+		</div>
+	
+		
+			
 	</footer><!-- #colophon -->
 
 
